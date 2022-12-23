@@ -12,7 +12,9 @@ def cli():
 @click.option('--delivery', default=False, is_flag=True)
 @click.option('--size', default='L', type=str)
 def order(pizza: str, delivery: bool, size: str = 'L') -> None:
-    """Готовит и доставляет пиццу"""
+    """
+    Готовит и доставляет пиццу
+    """
 
     pizza_dict = {
         Margherita(size).name.lower(): Margherita(size),
@@ -32,7 +34,9 @@ def order(pizza: str, delivery: bool, size: str = 'L') -> None:
 # TODO: Change menu
 @cli.command()
 def menu() -> None:
-    """Выводит меню"""
+    """
+    Выводит меню
+    """
 
     pizza_menu = {
         '— Margherita 🧀': ['tomato sauce', 'mozzarella', 'tomatoes'],
@@ -47,7 +51,6 @@ def menu() -> None:
 def log(message: str) -> callable:
     """
     Декоратор для вывода сообщения о статусе пиццы
-    :param: message: сообщение для вывода и подставновки времени
     """
 
     def log_decorator(func):
@@ -66,19 +69,25 @@ def log(message: str) -> callable:
 
 @log('🍳 Пиццу приготовили за {} мин {} сек')
 def bake(pizza: Pizza) -> None:
-    """Приготовление пиццы"""
+    """
+    Приготовление пиццы
+    """
     pass
 
 
 @log('🛵 Пиццу доставили за {} мин {} сек')
 def deliver(pizza: Pizza) -> None:
-    """Доставка пиццы"""
+    """
+    Доставка пиццы
+    """
     pass
 
 
 @log('🏠 Пиццу забрали за {} мин {} сек')
 def pickup(pizza: Pizza) -> None:
-    """Самовывоз пиццы"""
+    """
+    Самовывоз пиццы
+    """
     pass
 
 
