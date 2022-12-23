@@ -1,15 +1,15 @@
-# test_1
-py -3 -m doctest -o ELLIPSIS -o NORMALIZE_WHITESPACE -v test_1.py > .\result_1.txt
-# test_2
-py -3 -m pytest -v test_2.py > .\result_2.txt
-# test_3
-py -3 -m unittest -v test_3.py 2> .\result_3.txt
-# test_4
-py -3 -m pytest -v test_4.py > .\result_4.txt
-# test_5
-py -3 -m unittest -v test_5.py 2> .\result_5.txt
+# test_doctest
+py -3 -m doctest -o ELLIPSIS -o NORMALIZE_WHITESPACE -v test_doctest.py > .\result_doctest.txt
+# test_pytest_param
+py -3 -m pytest -v test_pytest_param.py > .\result_pytest_param.txt
+# test_unittest
+py -3 -m unittest -v test_unittest.py 2> .\result_unittest.txt
+# test_pytest
+py -3 -m pytest -v test_pytest.py > .\result_pytest.txt
+# test_unittest_mock
+py -3 -m unittest -v test_unittest_mock.py 2> .\result_unittest_mock.txt
 # Получение отчета покрытия
-py -3 -m coverage run -m unittest test_5.py
+py -3 -m coverage run -m unittest test_unittest_mock.py
 coverage report
 # Save in html
 py -3 -m coverage html
