@@ -3,7 +3,7 @@
 `python cli.py menu`
 
 - Выбора пиццы\
-`python cly.pt order pepperoni`
+`python cli.py order pepperoni`
 
 - Оформление доставки\
 `python cli.py order pepperoni --delivery`
