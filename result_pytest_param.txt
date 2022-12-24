@@ -1,0 +1,12 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.10.4, pytest-7.2.0, pluggy-1.0.0 -- C:\Users\79997\AppData\Local\Programs\Python\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: D:\AVITO\Python\Tests
+collecting ... collected 4 items
+
+test_2.py::test_decode[... --- ...-SOS] PASSED                           [ 25%]
+test_2.py::test_decode[- . ... --TEST] PASSED                            [ 50%]
+test_2.py::test_decode[-- --- .-. ... .-MORSE] PASSED                    [ 75%]
+test_2.py::test_letter_not_in_morse PASSED                               [100%]
+
+============================== 4 passed in 0.02s ==============================

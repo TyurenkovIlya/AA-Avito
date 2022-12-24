@@ -1,0 +1,15 @@
+﻿py : test_empty (test_3.TestFitTransform) ... ok
+строка:1 знак:1
++ py -3 -m unittest -v test_3.py 2> .\result_3.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_empty (tes...ansform) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_equal (test_3.TestFitTransform) ... ok
+test_in (test_3.TestFitTransform) ... ok
+test_raise_if_not_len (test_3.TestFitTransform) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
